@@ -3,7 +3,7 @@ export function stripIndents(strings: TemplateStringsArray, ...values: any[]):st
 export function stripIndents(arg0: string | TemplateStringsArray, ...values: any[]) {
     if (typeof arg0 !== 'string') {
         const processingString = arg0.reduce((acc, curr, i) => {
-            acc += curr + (values[i] ??  '');
+            acc += curr + (values[i] ?? '');
             return acc;
         }, '');
 
