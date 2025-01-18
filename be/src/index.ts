@@ -14,7 +14,7 @@ if (typeof global !== "undefined") {
 const genAI = new GoogleGenerativeAI("GEMINI_API_KEY");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-async function streamDemo() {
+async function streamMessage() {
   const prompt = "Explain how AI works";
 
   try {
@@ -29,4 +29,4 @@ async function streamDemo() {
   }
 }
 
-streamDemo();
+streamMessage();
